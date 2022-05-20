@@ -1,6 +1,6 @@
 Real-time detection of crop rows in maize fields based on autonomous extraction of ROI
 
-It is a crop rows detection algorithm.
+It is a crop rows detection algorithm using YOLOv5 object detection model.
 If you want to test the code, you need to follow the following step:
 1. Install the requirment.txt
 2. run detect.py. We have prepared 5 videos for testing, the root is test_video/*.mp4(avi). Images format is not accepected!
