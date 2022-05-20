@@ -282,7 +282,6 @@ def detect(save_img=False):
                     print('###################')
                     end = time.time()
                     cv2.imshow(str(p), im1)
-                    cv2.imshow('roi',roi)
 
                     if cv2.waitKey(1) == ord('q'):
                         break
