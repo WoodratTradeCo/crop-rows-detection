@@ -12,7 +12,6 @@ NOTE:
 3. It is noted that we just provide a solution for crop rows detection, if you want to run the code in your own data. We strongly suggest you to make some datasets to train your own data to ensure the performance of the model, and of course you can also train dataset based on our trained model to increase the generalization ability of the model. 
 4. The labeled image and detailed process are shown as follows:
 ![`3ZRB CTPV~2QXC5T@V}3@J](https://user-images.githubusercontent.com/38500652/169472351-d4743039-015f-4795-a2da-81e757eb460f.png)
-![1664972363589](https://user-images.githubusercontent.com/38500652/194058723-37a597d1-eccb-42bf-8e5b-c4b215b91cfe.png)
 ![image](https://user-images.githubusercontent.com/38500652/194058780-feec709c-74d1-4eeb-9c3e-0468412b2401.png)
 ![image](https://user-images.githubusercontent.com/38500652/194058802-02308204-ff79-407e-a73d-c93d3b6816ee.png)
 ![image](https://user-images.githubusercontent.com/38500652/194058860-7f533038-9001-4cde-9c69-d63bce5aa738.png)
