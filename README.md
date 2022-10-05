@@ -5,7 +5,7 @@ If you want to test the code, you need to follow the following steps:
 1. Install the requirment.txt
 2. Due to the size limitation of Github upload file, the trained model is stored in runs.zip. Model and training log can be obtained after unzipping. You MUST unzip one of the runs.zip to get the model! Otherwise the error will be reported when you run detect.py, because the corresponding trained model cannot be found!!
 3. run detect.py. We have prepared 5 videos for testing, the root is test_video/*.mp4(avi). Images format is not accepected!
-4. If you want to change the video, you have to rivise the line 300 in detect.py
+4. If you want to change the video, you have to revise the line 300 in detect.py
 
 NOTE:
 1. We shared the part of our datasets. In this project, we trained 1500 images. It is sorry that we cannot share all the dataset due to the limitation of github. But you can still check some typical images in folder "mydata/images/train". The traning log is shown in "runs/train/exp1".
