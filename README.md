@@ -6,16 +6,18 @@ It is a crop rows detection method using YOLOv5 object detection model.
 
 # Architecture
 <div align=center>
-<img width="435" alt="1702291777825" src="https://github.com/WoodratTradeCo/crop-rows-detection/assets/38500652/ab99ef35-10f3-4bc1-aad5-c11dcb787c91">  <img width="570" alt="1702291959973" src="https://github.com/WoodratTradeCo/crop-rows-detection/assets/38500652/9232fb41-9a92-4c2c-89e9-c247eeb13879">
-</div>
-
-<div align=center>
 <img width="1113" alt="1702287039880" src="https://github.com/WoodratTradeCo/crop-rows-detection/assets/38500652/6f859450-be25-4491-8f4a-8ff0b7e41cee">
 </div>
 
 # Labeled images
 <div align=center>
 <img width="1040" alt="1702287116895" src="https://github.com/WoodratTradeCo/crop-rows-detection/assets/38500652/4e3a9b4c-a0f1-4df3-9d84-5398b92d3b17">
+</div>
+
+# Image processing
+
+<div align=center>
+<img width="1000" alt="1702292437924" src="https://github.com/WoodratTradeCo/crop-rows-detection/assets/38500652/15d2796c-7b3b-4374-b820-28833f42abc0">
 </div>
 
 # Results
