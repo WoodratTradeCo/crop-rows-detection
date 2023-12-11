@@ -1,18 +1,63 @@
-Real-time detection of crop rows in maize fields based on autonomous extraction of ROI
+# Real-time detection of crop rows in maize fields based on autonomous extraction of ROI
+It is a crop rows detection method using YOLOv5 object detection model.
+1. ⚡Super fast: It takes only 25 ms to process a single image (640*360 pixels) and the frame rate of video stream exceeds 40FPS.
+2. 👍Multiple periods: The model is tranied on the dataset including of various crop rows periods.
+3. 🤗High accruacy: The average error angle of the detection lines is 1.88◦, which can meet the accuracy requirements of field navigation.
 
-It is a crop rows detection algorithm using YOLOv5 object detection model.
-If you want to test the code, you need to follow the following steps:
-1. Install the requirment.txt
-2. Due to the size limitation of Github upload file, the trained model is stored in runs.zip. Model and training log can be obtained after unzipping. You MUST unzip one of the runs.zip to get the model! Otherwise the error will be reported when you run detect.py, because the corresponding trained model cannot be found!!
-3. run detect.py. We have prepared 5 videos for testing, the root is test_video/*.mp4(avi). Images format is not accepected!
-4. If you want to change the video, you have to revise the line 300 in detect.py
+# Architecture
+<div align=center>
+<img width="435" alt="1702291777825" src="https://github.com/WoodratTradeCo/crop-rows-detection/assets/38500652/ab99ef35-10f3-4bc1-aad5-c11dcb787c91">  <img width="570" alt="1702291959973" src="https://github.com/WoodratTradeCo/crop-rows-detection/assets/38500652/9232fb41-9a92-4c2c-89e9-c247eeb13879">
+</div>
 
-NOTE:
-1. We shared the part of our datasets. In this project, we trained 1500 images. It is sorry that we cannot share all the dataset due to the limitation of github. But you can still check some typical images in folder "mydata/images/train". The traning log is shown in "runs/train/exp1".
-3. It is noted that we just provide a solution for crop rows detection, if you want to run the code in your own data. We strongly suggest you to make some datasets to train your own data to ensure the performance of the model, and of course you can also train dataset based on our trained model to increase the generalization ability of the model. 
-4. The labeled image and detailed process are shown as follows:
-![`3ZRB CTPV~2QXC5T@V}3@J](https://user-images.githubusercontent.com/38500652/169472351-d4743039-015f-4795-a2da-81e757eb460f.png)
-![image](https://user-images.githubusercontent.com/38500652/194058780-feec709c-74d1-4eeb-9c3e-0468412b2401.png)
-![image](https://user-images.githubusercontent.com/38500652/194058802-02308204-ff79-407e-a73d-c93d3b6816ee.png)
-![image](https://user-images.githubusercontent.com/38500652/194058860-7f533038-9001-4cde-9c69-d63bce5aa738.png)
+<div align=center>
+<img width="1113" alt="1702287039880" src="https://github.com/WoodratTradeCo/crop-rows-detection/assets/38500652/6f859450-be25-4491-8f4a-8ff0b7e41cee">
+</div>
+
+# Labeled images
+<div align=center>
+<img width="1040" alt="1702287116895" src="https://github.com/WoodratTradeCo/crop-rows-detection/assets/38500652/4e3a9b4c-a0f1-4df3-9d84-5398b92d3b17">
+</div>
+
+# Results
+
+<div align=center>
+  
+https://github.com/WoodratTradeCo/crop-rows-detection/assets/38500652/b091a076-273c-48ff-a5ab-d73d31c4d6f2
+
+</div>
+
+<div align=center>
+  
+https://github.com/WoodratTradeCo/crop-rows-detection/assets/38500652/53440847-a97e-406d-b26f-96e7a5d99cd9
+
+</div>
+
+# Usage (How to test our model)
+Thanks to the contribution, the code is based on https://github.com/ultralytics/yolov5. 
+
+    # 1. Download the trained weights and training log files.
+    The trained model is uploaded on https://drive.google.com/file/d/1uca8t8SYReriOtuzo5_RZsCJqb2ggmte/view?usp=sharing. Model and training log can be obtained after unzipping.
+    # 2. Install the requirment.txt
+    # 3. Run detect.py. 
+    We have prepared 5 videos for testing, the root is test_video/*.mp4(avi). Images format is not accepected yet.
+    # 4. Change the test vedio.
+    If you want to change the test video, you have to revise the line 300 in detect.py
+
+
+# NOTE:
+1. We shared the part of our datasets. In this project, we trained 1500 images. It is sorry that we cannot share all the dataset. But you can still check some typical images in folder "mydata/images/train". The traning log is shown in "runs/train/exp1".
+2. It is noted that we just provide a solution for crop rows detection, if you want to run the code in your own data. We strongly suggest you to make some datasets to train your own data to ensure the performance of the model.
+
+If you find this code useful to your research, please cite our paper as the following bibtex:
+
+    @article{yang2023real,
+      title={Real-time detection of crop rows in maize fields based on autonomous extraction of ROI},
+      author={Yang, Yang and Zhou, Yang and Yue, Xuan and Zhang, Gang and Wen, Xing and Ma, Biao and Xu, Liangyuan and Chen, Liqing},
+      journal={Expert Systems with Applications},
+      volume={213},
+      pages={118826},
+      year={2023},
+      publisher={Elsevier}
+    }
+
 
